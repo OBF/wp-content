@@ -1,0 +1,401 @@
+/*
+Theme Name: obf-new
+Author: kushinauwu
+Description: basic revised obf homepage theme
+Version: 5.0.7
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+
+/*Members list*/
+.current-members {
+    margin-bottom: 30px;
+    padding-top: 0;
+}
+
+.current-members-grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.current-members .members-list .member-details {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.members-list .member-details img {
+    margin-bottom: 10px;
+    height: 200px;
+    width: auto;
+    border-radius: 10%;
+    padding: 5px;
+    background-color: lightblue;
+    transition: 0.3s ease-in-out;
+}
+
+.members-list .member-details .member-name a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.3s ease;
+}
+
+.members-list .member-details .member-position {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: dimgray;
+    font-size: 20px;
+
+}
+
+.member-details .member-info {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.members-list .member-details .member-info p {
+    font-family: 'Montserrat', sans-serif;
+    color: dimgray;
+    font-size: 18px;
+}
+
+.members-list .member-details .member-info a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.members-contact p {
+    margin-bottom: 20px;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+.past-members {
+    padding-top: 30px;
+    background-color: #1b2e25;
+}
+
+.past-members-grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    word-break: break-word;
+}
+
+.past-members-grid .member-details img {
+    margin-bottom: 10px;
+    height: 100px;
+    width: auto;
+    border-radius: 10%;
+    padding: 5px;
+    background-color: lightblue;
+}
+
+.past-members-grid .member-details .member-name {
+    font-size: 20px;
+}
+
+.past-members-grid .member-details .member-position {
+    font-size: 18px;
+}
+
+.past-members .members-list .member-details {
+    margin-bottom: 30px;
+    text-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.past-members h1 {
+    color: #88eef7;
+}
+
+.past-members .members-list .member-info p,
+.past-members .members-list .member-position {
+    color: whitesmoke;
+}
+
+.past-members .members-list .member-name a {
+    color: lightblue;
+}
+
+.past-members .member-info p a {
+    color: lightblue;
+}
+
+.join-board {
+    margin-bottom: 3vh;
+}
+
+.join-board .joining-text {
+    margin-bottom: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.expectations-heading {
+    position: relative;
+}
+
+.expectations-heading h2 {
+    color: #275aa1;
+    margin-top: 30px;
+    padding: 0 0 1% 0;
+}
+
+ul.expectations-list {
+    list-style: none;
+    margin: 1% 2%;
+    padding-left: 0;
+}
+
+ul.expectations-list li {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    padding: 10px 15px;
+    margin: 1% 2%;
+    border-radius: 20px;
+    text-align: justify;
+}
+
+ul.expectations-list li:nth-child(odd) {
+    background-color: #cfffff;
+
+}
+
+ul.expectations-list li:nth-child(even) {
+    background-color: #cccccf;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    .members-list .member-details .member-name a {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 22px;
+        transition: 0.3s ease;
+    }
+
+    .members-list .member-details .member-position {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        color: dimgray;
+        font-size: 20px;
+
+    }
+
+    .members-list .member-details .member-info p {
+        font-family: 'Montserrat', sans-serif;
+        color: dimgray;
+        font-size: 18px;
+    }
+
+    .members-contact p {
+        margin-bottom: 20px;
+        padding: 0;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+    }
+
+    .past-members-grid {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        word-break: break-word;
+    }
+
+    .past-members-grid .member-details .member-name {
+        font-size: 20px;
+    }
+
+    .past-members-grid .member-details .member-position {
+        font-size: 18px;
+    }
+
+    .join-board .joining-text {
+        margin-bottom: 0;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        transition: 0.3s ease;
+    }
+
+    ul.expectations-list li {
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        padding: 10px 15px;
+        margin: 1% 2%;
+        border-radius: 20px;
+        text-align: justify;
+    }
+
+}
+
+/*mobile display*/
+
+@media only screen and (max-width: 769px) {
+
+    /*Members list*/
+    .current-members {
+        margin-bottom: 4vh;
+        margin-top: 2vh;
+        padding-top: 0;
+    }
+
+    .current-members-grid {
+        grid-template-columns: 50% 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .current-members h1 {
+        font-size: 5vh;
+        margin-bottom: 2vh;
+    }
+
+    .members-list .member-details img {
+        margin-bottom: 0.5vh;
+        padding: 0;
+        height: 150px;
+    }
+
+    .members-list .member-details .member-name a {
+        font-size: 3vh;
+    }
+
+    .members-list .member-details .member-position {
+        font-size: 2.8vh;
+    }
+
+    .members-list .member-details .member-info p {
+        font-family: 'Lato', serif;
+        font-size: 2.5vh;
+        letter-spacing: normal;
+        text-align: center;
+        padding: 0 10px;
+        word-break: break-word;
+    }
+
+    .members-list .member-details .member-info a {
+        font-size: 2.5vh;
+        word-break: break-word;
+    }
+
+
+    .current-members .members-contact p {
+        padding: 0;
+        font-family: 'Lato', serif;
+        font-size: 3vh;
+    }
+
+    .past-members h1 {
+        margin-top: 4vh;
+        font-size: 5vh;
+        margin-bottom: 2vh;
+    }
+
+    .past-members-grid {
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .past-members-grid .member-details img {
+        height: 100px;
+    }
+
+    .joining-text {
+        font-family: 'Lato', serif;
+        font-size: 3vh;
+    }
+
+    /*Board Expectations*/
+    .board-expectations {
+        margin-top: 2vh;
+        padding: 0px 0 50px 0;
+    }
+
+    .expectations-heading h2 {
+        font-size: 3.6vh;
+    }
+
+    ul.expectations-list li {
+        font-family: 'Lato', serif;
+        font-size: 2.5vh;
+        padding: 2vh 2.5vh;
+        margin: 1vh 0;
+        letter-spacing: normal;
+    }
+
+    .footer-section {
+        padding: 1vh 0;
+    }
+
+    .footer-section h3 {
+        margin-bottom: 2vh;
+        font-size: 4vh;
+    }
+
+    .footer-section p {
+        margin-bottom: 2vh;
+        font-family: 'Lato', serif;
+        font-size: 2.5vh;
+    }
+
+    .footer-section button {
+        font-size: 3vh;
+    }
+
+    .footer-section button:hover {
+        color: whitesmoke;
+    }
+
+    .footer-section .org-menu .org-menu-item a {
+        font-family: 'Lato', serif;
+        padding: 2vh;
+        font-size: 2.5vh;
+    }
+
+    .footer-section .network-item {
+        margin: 2%;
+    }
+
+    .footer-logo {
+        padding: 2vh;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .current-members-grid {
+        grid-template-columns: 50% 50%;
+    }
+
+    .past-members-grid {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .current-members-grid {
+        grid-template-columns: 50% 50%;
+    }
+
+    .current-members .members-list .member-details {
+        margin-bottom: 3%;
+        margin-left: 3%;
+        margin-right: 3%;
+        text-align: center;
+    }
+
+    .members-list .member-details img {
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .current-members-grid {
+        grid-template-columns: 100%;
+    }
+
+}

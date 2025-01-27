@@ -1,0 +1,1039 @@
+/*
+Theme Name: obf-new
+Author: kushinauwu
+Description: basic revised obf homepage theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+
+/*NAVIGATION*/
+.navbar {
+    margin-top: 0px;
+    padding-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    background-color: whitesmoke;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: transparent;
+}
+
+.navbar .navbar-logo {
+    padding: 0;
+    margin-left: 0;
+}
+
+.navbar-header .navbar-logo img {
+    max-height: 100px;
+    width: auto;
+    vertical-align: middle;
+    border: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    margin-bottom: auto;
+    margin-top: 10px;
+    text-align: right;
+}
+
+#menu-bosc-menu .menu-item {
+    padding: 10px 0;
+    text-align: left;
+    display: inline-block;
+    transition: 0.5s ease;
+    font-family: 'K2D', sans-serif;
+}
+
+#menu-bosc-menu .menu-item:hover {
+    background-color: rgba(128, 0, 128, 0.2);
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+#menu-bosc-menu .nav-link:hover,
+#menu-bosc-menu .nav-link:focus {
+    display: block;
+    padding-top: 0px;
+    color: darkslateblue;
+    font-weight: normal;
+    font-style: normal;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 22px;
+}
+
+.navbar ul li a {
+    display: block;
+    padding-top: 0px;
+    color: darkslateblue;
+    font-family: 'K2D', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 22px;
+}
+
+.active {
+    background-color: #c4dff5;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.dropdown-menu {
+    padding: 0;
+}
+
+.dropdown-menu > .active > a {
+    text-decoration: none;
+    background-image: none;
+    background-color: transparent;
+    outline: 0;
+}
+
+#menu-bosc-menu .menu-item-has-children:hover {
+    border-radius: 25px 25px 0 0;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+    display: block;
+    padding-top: 0px;
+    color: darkslateblue;
+    font-weight: normal;
+    font-style: normal;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 22px;
+    background-color: transparent;
+}
+
+.navbar-collapse .dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: rgba(196, 245, 198, 0.9);
+    width: auto;
+    height: auto;
+    box-shadow: 8px 8px 16px 0 rgba(128, 0, 128, 0.2);
+    z-index: 1;
+    text-align: left;
+    left: 0;
+    border-radius: 0 25px 25px 25px;
+    margin-top: 0;
+}
+
+
+
+.dropdown .dropdown-menu li a {
+    color: darkslategray;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+    background-color: transparent;
+    background-image: none;
+    border-radius: 10px;
+
+}
+
+.dropdown:hover .dropdown-menu {
+    display: inline-grid;
+}
+
+.dropdown-menu > .active > a:focus,
+.dropdown-menu > .active > a:hover {
+    color: darkslateblue;
+    text-decoration: none;
+    background-color: transparent;
+    outline: 0;
+}
+
+.dropdown-menu .current-menu-item {
+    background-color: transparent;
+}
+
+i {
+    border: solid darkslateblue;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 3px;
+}
+
+.down {
+    transform: rotate(45deg) translateY(-5px);
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: darkslategray;
+}
+
+/*bosc homepage*/
+
+.bosc-introduction-image {
+    padding-top:20px;
+}
+
+.bosc-introduction-image .wp-block-media-text__content {
+    padding-left:0;
+}
+
+.bosc-introduction-image h1:first-of-type {
+    margin-top:-3%;
+}
+
+.bosc-introduction-image img {
+    margin-top: 1%;
+}
+
+.bosc-overview {
+    text-align: center;
+    background-color: whitesmoke;
+    margin-bottom: 0;
+}
+
+h1.bosc-overview,
+h1.bosc-summary {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+p.bosc-overview {
+    padding: 0 3% 30px 3%;
+}
+
+.important-dates,
+.session-topics,
+.bosc-organizing-committee,
+.bosc-review-committee,
+.previous-boscs,
+.bosc-contact {
+    padding-bottom: 20px;
+}
+
+.bosc-organizing-committee,
+.bosc-review-committee {
+    margin-bottom: 0;
+}
+
+.dates-sessions .wp-block-column {
+  flex-basis:50%;
+}
+
+.dates-sessions .important-dates,
+.bosc-committee .bosc-organizing-committee,
+.bosc-previous-and-contact .bosc-contact {
+    background-color: #fffcb9;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+}
+
+.dates-sessions .session-topics,
+.bosc-committee .bosc-review-committee,
+.bosc-previous-and-contact .previous-boscs {
+    background-color: #e2ffb9;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.dates-sessions .session-topics h2, .dates-sessions .important-dates h2 {
+  margin-top:0.4em;
+}
+
+.wp-block-button__link {
+    color: darkslategray;
+    text-shadow: 1px 1px 2px #a6a6a6;
+    font-weight: bold;
+    font-family: 'Montserrat', serif;
+    font-size: 16px;
+    background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 99%);
+    margin-top: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.wp-block-button__link:hover {
+    background-image: linear-gradient(to right, #8fd3f4 0%, #84fab0 99%);
+    color: grey;
+}
+
+.bosc-summary {
+    margin-bottom: 0;
+}
+
+p.bosc-summary {
+    padding: 0 3% 10px 3%;
+}
+
+.bosc-sponsors-images {
+    margin-top: 5%;
+}
+
+p.bosc-registration {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+/*about BOSC*/
+
+.previous-bosc-meetings h1 {
+    margin-bottom: 0;
+    padding: 20px;
+}
+
+
+h1.bosc-history {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+ul.bosc-timeline {
+    list-style-type: none;
+    position: relative;
+    margin-left: 10%;
+}
+
+ul.bosc-timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+
+ul.bosc-timeline li {
+    margin: 30px 0;
+    padding-left: 20px;
+}
+
+ul.bosc-timeline li:before {
+    content: ' ';
+    background: #fff980;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #aaff33;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+    margin-top: 10px;
+}
+
+
+ul.bosc-timeline li a {
+    display: inline;
+    font-weight: normal;
+}
+
+ul.bosc-timeline li a:nth-child(1) {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.get-involved {
+    padding: 1% 3%;
+    margin-bottom: 20px;
+}
+
+.get-involved h2 {}
+
+.get-involved p {}
+
+.get-involved:nth-child(odd) {
+    border: 2px solid #fffcb9;
+}
+
+.get-involved:nth-child(even) {
+    border: 2px solid #e2ffb9;
+}
+
+.sponsors {
+    background-color: ghostwhite;
+    margin-bottom: 0;
+}
+
+h1.sponsors {
+    padding: 20px 3% 0 3%;
+}
+
+ul.sponsors {
+    padding-left: 5%;
+    padding-right: 3%;
+}
+
+p.sponsors {
+    padding: 10px 3% 30px 3%;
+}
+
+.bosc-related-channels {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.bosc-related-channels .wp-block-media-text .wp-block-media-text__content {
+    padding: 0;
+}
+
+.bosc-related-channels .wp-block-media-text .wp-block-media-text__media {
+    margin: auto;
+    width: 100px;
+    height: auto;
+}
+
+iframe {
+    width: 100%;
+    min-height: 400px;
+    height: 100%;
+    border: 1px solid gray;
+}
+
+/*BOSC abstract submission*/
+
+.bosc-pear-submit {
+    margin-right: 3%;
+}
+
+.bosc-abstract-formatting .wp-block-column {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0 2% 2% 2%;
+}
+
+.bosc-abstract-formatting .wp-block-column:nth-child(odd) {
+    background-color: #e2ffb9;
+}
+
+.bosc-abstract-formatting .wp-block-column:nth-child(even) {
+    background-color: #fffcb9;
+}
+
+.submission-instructions li {
+    padding-bottom: 10px;
+    margin-left: 3%;
+    margin-right: 2%;
+}
+
+.bosc-fellowship-license {
+    margin-top: 30px;
+    background-color: ghostwhite;
+    padding:0.5em 20px 1em 20px;
+}
+
+h1.bosc-fellowship-license {
+    padding:0.5em 20px;
+    margin: 0;
+}
+
+p.bosc-fellowship-license {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul.bosc-fellowship-license {
+    padding-left: 4%;
+    padding-right: 2%;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+/*keynote speakers */
+
+.keynote-speakers {
+    padding: 10px;
+    align-items: start;
+    margin-bottom: 30px;
+}
+
+.keynote-speakers figure {
+    text-align: center;
+}
+
+.keynote-speakers > figure > img {
+    margin-top: 3vh;
+    max-width: 300px;
+    height: auto;
+}
+
+.keynote-speakers:nth-child(even) {
+    border: 2px solid #fffcb9;
+}
+
+.keynote-speakers:nth-child(odd) {
+    border: 2px solid #e2ffb9;
+}
+
+.keynote-speakers h2 {
+    text-align: center;
+}
+
+/* panel */
+
+
+.panel {
+    padding: 10px;
+}
+
+.panel figure {
+    text-align: center;
+}
+
+.keynote-speakers .wp-block-media-text__content,
+.panel .wp-block-media-text__content {
+    padding: 0;
+}
+
+.panel h4 {
+    text-align: center;
+}
+
+.panel > figure > img {
+    width: 180px;
+    height: auto;
+}
+
+.panel:nth-child(odd) {
+    border: 2px solid #e2ffb9;
+}
+
+.panel:nth-child(even) {
+    border: 2px solid #fffcb9;
+}
+
+/*sponsors page*/
+.sponsors-introduction img,
+.bosc-participants img {
+    border-radius: 20px;
+}
+
+.bosc-participants {
+    background-color: ghostwhite;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+tr:nth-child(1) {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.wp-block-table.bosc-participants-table tr:nth-child(odd) {
+    background-color: #e2ffb9;
+}
+
+.bosc-participants-table tr:nth-child(even) {
+    background-color: #fffcb9;
+}
+
+.wp-block-table.bosc-participants-table td {
+    border: 1px solid lightgray;
+    padding: 10px 15px;
+}
+
+.bosc-sponsorship-help ul {
+    list-style: none;
+}
+
+.bosc-sponsorship-help ul li {
+    margin: 10px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.bosc-sponsorship-help ul li:nth-child(odd) {
+    background: #e2ffb9;
+}
+
+.bosc-sponsorship-help ul li:nth-child(even) {
+    background: #fffcb9;
+}
+
+.bosc-sponsors-gallery h2 {
+  margin-top:2%;
+}
+.bosc-sponsors-gallery .wp-block-column {
+    padding: 1% 2%;
+}
+
+.bosc-sponsors-gallery .wp-block-column:nth-child(odd) {
+    border: 2px solid #e2ffb9;
+
+}
+
+.bosc-sponsors-gallery .wp-block-column:nth-child(even) {
+    border: 2px solid #fffcb9;
+}
+
+.bosc-sponsors-gallery .blocks-gallery-item {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.bosc-sponsors-gallery figure {
+    max-width: 100px;
+}
+
+.bosc-sponsorship-benefits {
+    list-style: none;
+}
+
+.bosc-sponsorship-benefits li {
+    margin: 10px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.bosc-sponsorship-benefits li:nth-child(odd) {
+    background: #e2ffb9;
+}
+
+.bosc-sponsorship-benefits li:nth-child(even) {
+    background: #fffcb9;
+}
+
+
+.bosc-footer-sub-section {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bosc-footer-sub-section p {
+    text-align: left;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.bosc-footer-sub-section .org-menu .org-menu-item a {
+    color: dodgerblue;
+    text-align: left;
+    padding: 0;
+}
+
+.bosc-footer-sub-section .networks {
+    display: grid;
+    
+    margin-bottom: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2px;
+    padding: 2px;
+    margin-left: auto;
+}
+
+.network-item {
+    text-align: center;
+    overflow-wrap: normal;
+    word-break: normal;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .navbar-header .navbar-logo img {
+        max-height: 10vh;
+    }
+
+    .sponsors-introduction,
+    .bosc-sponsors-gallery {
+        flex-wrap: nowrap;
+    }
+
+    .sponsors-introduction .wp-block-column .has-2-columns {
+        flex-wrap: nowrap;
+    }
+
+    .bosc-sponsorship-help {
+        display: block;
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 767px) {
+  .bosc-introduction-image h1:first-of-type {
+    margin-top: 0.5em;
+}
+
+    .navbar {
+        margin-top: 0px;
+        padding-top: 10px;
+        margin-bottom: 0px;
+        padding-bottom: 10px;
+    }
+
+    .navbar .navbar-header .icon-bar {
+        background-color: #275aa1;
+        margin-bottom: 1vh;
+        padding: 0 3vh 0.7vh 3vh;
+        border-radius: 1vh;
+    }
+
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar .navbar-logo {
+        margin-left: 0;
+    }
+
+    .navbar .navbar-header .navbar-logo img {
+        margin-top: 0;
+        padding-bottom: 0;
+        display: inline;
+        max-width: 50%;
+    }
+
+    .navbar-fixed-top .navbar-collapse,
+    .navbar-fixed-bottom .navbar-collapse {
+        max-height: 100%;
+    }
+
+    .navbar ul {
+        list-style: none;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        padding: 0;
+        text-align: right;
+        display: block;
+        transition: 0.5s ease;
+    }
+
+    .navbar ul li:hover {
+        background-color: rgba(196, 245, 198, 0.9);
+        border-radius: 0;
+        text-decoration: none;
+    }
+
+    .navbar ul li a {
+        display: block;
+        padding-top: 0px;
+        color: darkslateblue;
+        font-weight: normal;
+        font-style: normal;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        font-size: 4vh;
+        text-align: right;
+    }
+
+    #menu-bosc-menu .nav-link:hover,
+    #menu-bosc-menu .nav-link:focus {
+        font-size: 4vh;
+    }
+
+    #menu-bosc-menu .dropdown-menu .active {
+        border-radius: 0;
+    }
+
+    #menu-bosc-menu .menu-item {
+        margin-top: 5px;
+        display: block;
+        padding: 3px 0;
+    }
+
+    #menu-bosc-menu .dropdown-menu .menu-item {
+        margin-top: 0px;
+    }
+
+    .navbar-collapse .dropdown .dropdown-menu {
+        position: relative;
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+        z-index: 1;
+        border-radius: 0;
+        margin-top: 0;
+        transition: 0.5s ease;
+    }
+
+    .dropdown-menu {
+        padding: 0;
+    }
+
+    .dropdown-menu li {
+        display: block;
+    }
+
+    .dropdown .dropdown-menu li a {
+        color: darkslategray;
+        font-size: 2.7vh;
+        transition: 0.5s ease;
+    }
+
+    .navbar .dropdown .dropdown-menu li:hover {
+        background-color: transparent;
+    }
+
+    #menu-bosc-menu .dropdown-menu .menu-item:hover {
+        border-radius: 0;
+    }
+
+    .dropdown-menu li a:hover {
+        background-image: none;
+        border-radius: 0;
+
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 1.5vh;
+    }
+
+    i {
+        border: solid darkslateblue;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        margin-left: 0px;
+        margin-right: 10px
+    }
+
+    .down {
+        transform: rotate(45deg) translateY(-5px);
+    }
+
+    i {
+        border: solid darkslateblue;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        margin-left: 0px;
+        margin-right: 10px
+    }
+
+    .down {
+        transform: rotate(45deg) translateY(-5px);
+    }
+
+    .bosc-introduction-image {
+        display: block;
+    }
+
+    .bosc-sponsors {
+        display: block;
+    }
+
+    .keynote-speakers {
+        display: block;
+        padding: 0;
+        align-items: start;
+        margin-bottom: 30px;
+
+    }
+
+    .keynote-speakers figure {
+        text-align: center;
+    }
+
+    .keynote-speakers > figure > img {
+        margin-top: 2vh;
+        width: 60vw;
+    }
+
+    .panel {
+        display: block;
+    }
+
+    .get-involved h2 {
+        margin-left: 0px;
+        padding-left: 2%;
+    }
+
+    .sponsors-introduction,
+    .bosc-sponsors-gallery {
+        display: block;
+    }
+
+    .sponsors-introduction .has-2-columns figure {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .bosc-participants {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .bosc-footer-sub-section {
+        grid-template-columns: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    p {
+        font-size: 3vh;
+        font-family: 'Lato', sans-serif;
+        letter-spacing: normal;
+        color: darkslategray;
+        word-break: break-word;
+    }
+
+    ul {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    /*about BOSC*/
+    .previous-bosc-meetings h1 {
+        margin-bottom: 0;
+        padding: 20px;
+    }
+
+
+    h1.bosc-history {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    ul.bosc-timeline {
+        margin-right: 2.5%;
+    }
+
+    ul.bosc-timeline:before {
+        content: ' ';
+        background: #d4d9df;
+        display: inline-block;
+        position: absolute;
+        left: 29px;
+        width: 2px;
+        height: 100%;
+        z-index: 400;
+    }
+
+    ul.bosc-timeline li {
+        margin: 30px 0;
+        padding-left: 20px;
+    }
+
+    ul.bosc-timeline li:before {
+        content: ' ';
+        background: #fff980;
+        display: inline-block;
+        position: absolute;
+        border-radius: 50%;
+        border: 3px solid #aaff33;
+        left: 20px;
+        width: 20px;
+        height: 20px;
+        z-index: 400;
+        margin-top: 10px;
+    }
+
+    ul.bosc-timeline li a {
+        font-size: 3.7vh;
+    }
+
+    .get-involved {
+        margin-bottom: 2vh;
+    }
+
+    .sponsors {
+        background-color: ghostwhite;
+        margin-bottom: 0;
+    }
+
+    h1.sponsors {
+        padding: 2vh 2% 1vh 2%;
+    }
+
+    ul.sponsors {
+        padding-left: 10%;
+        padding-right: 3%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    p.sponsors {
+        padding: 10px 3% 30px 3%;
+    }
+
+    .bosc-related-channels {
+        grid-template-columns: auto;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .bosc-related-channels .wp-block-media-text {
+        grid-template-columns: auto;
+    }
+
+    .bosc-related-channels .wp-block-media-text .wp-block-media-text__content {
+        padding: 0 5%;
+    }
+
+    .bosc-related-channels .wp-block-media-text .wp-block-media-text__media {
+        margin: auto;
+        width: 100px;
+        height: auto;
+    }
+
+    table {
+        font-family: 'Lato', sans-serif;
+        font-size: 2.7vh;
+    }
+
+    tr:nth-child(1) {
+        font-size: 2.7vh;
+    }
+
+    .wp-block-table.bosc-participants-table td {
+        padding: 2px;
+    }
+
+    .bosc-sponsorship-help ul,
+    .bosc-sponsorship-benefits {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .bosc-sponsorship-help ul li,
+    .bosc-sponsorship-benefits li {
+        padding: 5px;
+    }
+
+    .bosc-footer-sub-section {
+        grid-template-columns: 100%;
+    }
+
+    .dates-sessions .wp-block-column {
+      flex-basis:100%;
+    }
+}

@@ -1,0 +1,214 @@
+/*
+Theme Name: obf-new
+Author: kushinauwu
+Description: basic revised obf homepage theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+
+
+/*Main projects */
+
+.main-projects,
+.affiliated-projects,
+.related-projects {}
+
+.projects-details {
+    margin-bottom: 30px;
+}
+
+.project-icon {
+    display: inline;
+    text-align: center;
+    font-family: 'Montserrat', serif;
+    font-size: 30px;
+    color: #275aa1;
+    font-weight: bold;
+}
+
+
+
+.project-icon img {
+    border: 3px solid #84d3f4;
+    padding: 5px;
+    height: auto;
+    width: 170px;
+}
+
+
+.project-info p {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.7px;
+    font-size: 20px;
+    color: darkslategray;
+}
+
+/*related projects*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.grid-container .related-projects-details {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.related-projects-icon img {
+    border: 3px solid #84d3f4;
+    padding: 5px;
+    width: 150px;
+    height: auto;
+}
+
+.related-projects-heading h2 {
+    color: #275aa1;
+    text-align: center;
+}
+
+.related-projects-heading h2 a {
+    font-family: 'Montserrat', sans-serif;
+    color: #275aa1;
+    text-align: center;
+}
+
+.related-projects-info p {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Ontologies and definitions*/
+
+.ontologies-definitions,
+.in-memoriam {
+    background-color: #1b2e25;
+
+}
+
+.ontologies-definitions-heading h1,
+.in-memoriam-heading h1 {
+    color: #88eef7;
+}
+
+.ontologies-definitions-list li,
+.in-memoriam-list li {
+    margin-bottom: 20px;
+}
+
+.ontologies-definitions-list li .ontology-title,
+.in-memoriam-list li .in-memoriam-project-title {
+    color: lightblue;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.ontologies-definitions-list li p,
+.in-memoriam-list li p {
+    margin: 0 15px 20px 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.7px;
+    color: whitesmoke;
+    display: inline;
+}
+
+/*tablet resolution*/
+
+@media only screen and (max-width:769px) {
+
+    .main-projects,
+    .affiliated-projects,
+    .related-projects {
+        margin-bottom: 0vh;
+        margin-top: 0px;
+    }
+
+    .projects-details {
+        margin-bottom: 3vh;
+    }
+
+    .main-projects-head h1,
+    .affiliated-projects-head h1,
+    .related-projects-head h1 {
+        margin-bottom: 4vh;
+        font-size: 5vh;
+    }
+
+    .project-icon {
+        font-size: 3.8vh;
+    }
+
+    .project-icon img {
+        width: 120px;
+        height: auto;
+        margin-bottom: 2vh;
+    }
+
+    .project-info p {
+        font-size: 3vh;
+        font-family: 'Lato', serif;
+        letter-spacing: normal;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 49% 49%;
+    }
+
+    .grid-container .related-projects-details {
+        text-align: center;
+        padding: 1vh 0;
+    }
+
+
+    .related-projects-icon img {
+        width: 120px;
+        height: auto;
+    }
+
+    .related-projects-heading h2 {
+        font-size: 3.8vh;
+    }
+
+    .related-projects-info p {
+        font-size: 3vh;
+        font-family: 'Lato', serif;
+        letter-spacing: normal;
+        word-wrap: break-word;
+        text-align: center;
+        padding: 0;
+    }
+
+    .ontologies-definitions,
+    .in-memoriam {
+        background-color: #1b2e25;
+        padding-top: 2vh;
+        padding-bottom: 0px;
+    }
+
+    .ontologies-definitions-heading h1 {
+        margin-bottom: 4vh;
+        font-size: 5vh;
+    }
+
+    .ontologies-definitions-list li .ontology-title,
+    .in-memoriam-list li .in-memoriam-project-title {
+        font-size: 3.5vh;
+        font-family: 'Lato', serif;
+        letter-spacing: normal;
+    }
+
+    .ontologies-definitions-list li p,
+    .in-memoriam-list li p {
+        font-size: 3vh;
+        font-family: 'Lato', serif;
+        letter-spacing: normal;
+    }
+
+}

@@ -1,0 +1,302 @@
+/*
+Theme Name: obf-new
+Author: kushinauwu
+Description: basic revised obf homepage theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+
+/*HISTORY*/
+.history-section {
+    background-position: left 42vh, right top;
+    max-width: 500px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: lightgray;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.timeline-wrapper {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.timeline-wrapper h2 {
+    text-align: center;
+}
+
+.timeline-wrapper::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: white;
+    border: 4px solid #8fd3f4;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.logo {
+    text-align: center;
+    padding-right: 10px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    height: auto;
+    margin-left: 1%;
+    border-radius: 20%;
+}
+
+.logo img:nth-child(odd) {
+    border: 1px solid #8fd3f4;
+}
+
+.logo img:nth-child(even) {
+    border: 1px solid #84fab0;
+}
+
+.timeline-wrapper p {
+    font-size: 22px;
+    color: darkslategray;
+    text-align: center;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #84fab0;
+}
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #84fab0 transparent transparent;
+}
+
+.right::after {
+    left: -13px;
+}
+
+.content {
+    padding: 5px 20px;
+    border: 2px solid #84fab0;
+    position: relative;
+    border-radius: 6px;
+}
+
+/*about us*/
+.us-section {
+    background-color: #1b2e25;
+    margin-top: 40px;
+    padding: 30px 0;
+    margin-bottom: 20px;
+    opacity: 1;
+    transition: 1s ease;
+}
+
+
+.us-section img {
+    border-radius: 0 100px 100px 0;
+}
+
+.us-section h1 {
+    font-size: 48px;
+    color: #88eef7;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+}
+
+.us-section p {
+    color: whitesmoke;
+    display: block;
+    padding 20px 0px;
+    background-color: transparent;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+p {
+    display: block;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 20px;
+    color: #2d95b5;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.7px;
+
+}
+
+.us-section span {
+    padding-left: 10px;
+}
+
+/*activity section*/
+
+ul.activities-text-wrapper {
+    list-style: none;
+    margin: 1% auto;
+    padding-left: 0;
+}
+
+ul.activities-text-wrapper li {
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    padding: 20px;
+    margin: 2% auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;
+    text-align: center;
+}
+
+ul.activities-text-wrapper li:nth-child(odd) {
+    background-color: #cfffff;
+
+}
+
+ul.activities-text-wrapper li:nth-child(even) {
+    background-color: #cccccf;
+}
+
+
+
+/*mobile display*/
+
+@media only screen and (max-width: 768px) {
+
+    /*HISTORY*/
+
+
+    .history-section h1 {
+        margin-bottom: 0;
+    }
+
+    /*about us*/
+    .us-section {
+        background-color: #1b2e25;
+        margin-top: 40px;
+        display: block;
+        opacity: 1;
+        transition: 1s ease;
+        position: relative;
+        padding: 55px 0;
+    }
+
+    .us-section img {
+        border-radius: 0;
+    }
+
+    .us-section h1 {
+        font-size: 5vh;
+        margin-bottom: 0px;
+        margin-top: 20px;
+        color: #88eef7;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0;
+        width: 100%;
+    }
+
+    .us-section p {
+        color: whitesmoke;
+        display: block;
+        background-color: transparent;
+        text-decoration: none;
+        font-family: 'Lato', serif;
+        font-size: 3vh;
+    }
+
+
+    p {
+        display: block;
+        background-color: transparent;
+        text-decoration: none;
+        font-size: 3vh;
+        color: #2d95b5;
+        font-family: 'Lato', serif;
+        letter-spacing: normal;
+    }
+
+    /*activities*/
+    ul.activities-text-wrapper li {
+        font-family: 'Lato', sans-serif;
+        font-size: 3vh;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .timeline::after {
+        left: 31px;
+    }
+
+    .timeline-wrapper {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timeline-wrapper p {
+        font-size: 3vh;
+    }
+
+    .timeline-wrapper::before {
+        left: 60px;
+        border: medium solid #84fab0;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #84fab0 transparent transparent;
+    }
+
+    .left::after,
+    .right::after {
+        left: 18px;
+    }
+
+    .right {
+        left: 0%;
+    }
+}
